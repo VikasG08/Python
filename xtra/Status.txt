@@ -1,0 +1,36 @@
+Develop an e-commerce website in Django : Vegefoods
+
+As a User I should be able to perform:
+1. user registration + User login with password and using oauth (google,FB or github) - Done
+2. product search (by name, by category) -Done
+3. add to cart + purchase (implement a dummy payment gateway or keep COD)- Done
+4. show orders with order status -Done
+5. product details page (price, discount, availability etc) -Done
+6. email notification using celery and redis (skip integration with SMTP - just write to a file)  - In progress
+
+
+As admin:
+1. I can deactivate user -done
+2. I can add a new product with image -done
+3. I should be able to update inventory (update count, price) -done
+4. I should be able to generate report of day/week/month wise sell  - In progress
+5. I should be able to generate a report of top 10 buyers and top 10 selling items
+
+NFR
+1. All pages are responsive. Admin page can be exception to it (you can use default Django admin) - Done
+2. Page load time <= 3 (for all pages)
+3. DB migrations scripts should be versioned and ready - Done
+4. It should be a 12 factor app ex:
+		Dockerized whole app - Done
+		Application should be stateless etc - Done
+
+
+
+Submission doc:
+1. deploy this app to provide a link to test 
+2. Github or gitlab link of code - Done
+3. Run a small PT using Apache benchmarking with 50 users and send report
+4. submit performance in terms of page load (GTmatrix or lighthouse or chrome developer results) - In progress
+4. Db design - Done
+5. Architecture diagram - Done
+6. Flow diagram - Done
